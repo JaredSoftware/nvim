@@ -52,3 +52,7 @@ map('n', '<leader>B', ':lua require"dap".set_breakpoint(vim.fn.input("Breakpoint
 map('n', '<leader>lp', ':lua require"dap".set_breakpoint(nil, nil, vim.fn.input("Log point message: "))<CR>', opts)
 map('n', '<leader>dr', ':lua require"dap".repl.open()<CR>', opts)
 map('n', '<leader>dl', ':lua require"dap".run_last()<CR>', opts)
+
+-- Guardar archivo con Ctrl+S
+map('n', '<C-s>', ':w<CR>', opts)
+map('i', '<C-s>', '<Esc>:w<CR>a', opts)
