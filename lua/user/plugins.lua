@@ -47,5 +47,10 @@ use {
   end
 }
 
+use {
+  'mfussenegger/nvim-dap',
+  requires = {'rcarriga/nvim-dap-ui'}
+}
+
 end)
 
